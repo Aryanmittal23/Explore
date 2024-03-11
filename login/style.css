@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap") ;
+
 :root{
     -bg-white: hsl(0, 0%, 100%);
 --bg-black-alpha-20: hsla(0, 0%, 0%, 0.2);
@@ -25,9 +27,7 @@ body{
     align-items: center;
     justify-content: center;
     background:var(--bg-majorelle-blue);
-    ;
 }
-
 .wrapper{
     position: relative;
     max-width: 470px;
@@ -36,12 +36,14 @@ body{
     padding: 20px 30px 120px;
     background: #4070f4;
     box-shadow: 0 5px 10px rgb(0, 0, 0,0.1) ;
+    overflow: hidden;
 }
 .form header{
     font-size:30px;
     text-align: center;
     color:#fff ;
     font-weight: 600;
+    cursor: pointer;
 }
 .wrapper form{
     display: flex;
@@ -59,29 +61,33 @@ form input{
     color: #333;
     border-radius:8px ;
 }
-
 form .checkbox{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .checkbox input[type="checkbox"]{
     height: 16px;
     width: 16px;
     accent-color: #fff;
     cursor: pointer;
 }
-
 form .checkbox label{
     cursor: pointer;
     color: #fff;
+}
+form a{
+    color: #333;
+    text-decoration: none;
+}
+form a:hover{
+    text-decoration:underline;
 }
 form input[type="submit"]{
     margin-top:15px ;
     padding:none;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
 }
 
